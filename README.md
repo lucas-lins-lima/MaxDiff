@@ -1,5 +1,7 @@
 **1. Introdução**
+
 **Descrição do Projeto**
+
 O intuito deste projeto é realizar o sorteio de frases ou atributos relacionados ao mercado imobiliário, em particular sobre imóveis específicos, utilizando o método de MaxDiff para efetuar o sorteio das frases. O MaxDiff é empregado aqui como uma técnica para determinar quais frases ou atributos são mais relevantes ou preferidos em um conjunto de opções disponíveis, proporcionando uma visão mais clara das preferências em contextos onde múltiplas versões ou descrições estão envolvidas.
 
 **Motivação**
