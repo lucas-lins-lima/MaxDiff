@@ -8,7 +8,9 @@ O intuito deste projeto é realizar o sorteio de frases ou atributos relacionado
 Minha principal motivação para criar este projeto é a busca constante por aprendizado. No meu ambiente de trabalho, frequentemente encontro situações onde esse tipo de atividade é relevante, e considero fundamental entender de maneira prática o funcionamento do sorteio de frases e o conceito subjacente ao MaxDiff. Este projeto busca solucionar problemas relacionados a sorteios aleatórios, oferecendo um método estruturado para entender e aplicar preferências dentro do contexto do mercado imobiliário. Essa prática não só melhora a compreensão teórica, mas também oferece insights sobre a aplicação prática destas técnicas em cenários do mundo real.
 
 **2. O que é MaxDiff?**
+
 **Definição**
+
 MaxDiff, ou Maximum Difference Scaling, é uma técnica estatística usada para medir as preferências relativas entre diferentes itens ou atributos. Essa metodologia é comumente utilizada em pesquisas de mercado para entender quais atributos de um produto ou serviço são mais valorizados pelos consumidores. Ao apresentar conjuntos de opções e solicitar que os participantes selecionem os itens mais e menos preferidos, o MaxDiff reúne dados que refletem as preferências agregadas de forma mais eficaz do que métodos tradicionais.
 
 **Aplicação no Projeto**
@@ -25,7 +27,9 @@ Neste projeto, o MaxDiff é aplicado para realizar o sorteio de frases ou atribu
 Essas métricas formam a base para a implementação eficaz do MaxDiff no sorteio de frases, oferecendo insights sobre quais atributos são mais valorizados em um cenário imobiliário. A abordagem metodológica rigorosa permite que as empresas de mercado imobiliário analisem dados de preferência de maneira eficaz e fundamentada.
 
 **3. Funcionamento do MaxDiff**
-**Visão Geral do Algoritmo
+
+**Visão Geral do Algoritmo**
+
 O MaxDiff, neste projeto, é implementado para efetuar uma seleção otimizada de frases ou atributos, garantindo que as preferências dos entrevistados sejam bem mapeadas e entendidas. Aqui está uma visão detalhada de como o algoritmo funciona e quais são suas partes principais:
 
 **Processos e Funções:**
