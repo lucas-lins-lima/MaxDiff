@@ -69,3 +69,33 @@ Parâmetros:
 - O resultado final é um arquivo Excel contendo a organização completa dos conjuntos MaxDiff otimizados, com resumos claros sobre quantos conjuntos foram gerados e a distribuição das frases por conjunto.
 - Outras saídas incluem um relatório de validação que ajuda a contextualizar se os dados configurados foram suficientes e corretamente distribuídos.
 Este esquema geral do funcionamento do algoritmo MaxDiff no projeto fornece um entendimento sólido de como a técnica é aplicada para sortear frases dentro do contexto imobiliário. O código é projetado para maximizar a eficácia das decisões dos entrevistados, garantindo que as preferências sejam refletidas de forma justo e precisa.
+
+**4. Sorteio de Frases**
+
+**Objetivo do Sorteio de Frases**
+O sorteio de frases é uma etapa crucial do projeto, projetada para garantir que todas as frases ou atributos relacionados aos imóveis sejam apresentados aos entrevistados de maneira equilibrada. A ideia é explorar as preferências dos entrevistados sem viés e de forma abrangente, maximizando a eficiência do levantamento de dados.
+
+**Processo do Sorteio**
+
+**Preparação e Estruturação**
+
+Primeiramente, as frases relacionadas aos atributos dos imóveis são listadas e indexadas em um dicionário, onde cada frase é associada a um código único. Isso facilita o acompanhamento e a identificação das frases ao longo do processo.
+
+**Algoritmo de Sorteio**
+
+- **Seleção Aleatória:** Utilizando a função np.random.choice, o código seleciona aleatoriamente um número específico de frases para cada conjunto (ou tela) a ser apresentado. Esta seleção é feita sem reposição, garantindo que as frases em um mesmo conjunto sejam distintas.
+- **Número de Conjuntos:** O total de conjuntos, calculado na etapa anterior, é gerado para cada entrevistado de forma que todas as frases sejam adequadamente cobertas, conforme o número alvo de aparições estabelecido.
+
+**Distribuição Balanceada**
+
+O sorteio é projetado para assegurar que todas as frases aparecem em diferentes combinações através dos conjuntos, minimizando a repetição e maximizando a diversidade apresentada aos entrevistados. Este equilíbrio é essencial para a veracidade dos dados coletados, evitando que determinadas palavras sejam sub-representadas.
+
+**Criação e Armazenamento dos Dados**
+
+Uma vez que as frases são sorteadas para cada conjunto e entrevistado, estas informações são organizadas em um DataFrame e exportadas para um arquivo Excel. Isso permite que os dados sejam facilmente analisados e revisados, além de permitir a visualização clara dos conjuntos apresentados.
+
+**Benefícios do Sorteio**
+
+- **Cobertura Completa:** O uso de sorteio aleatório garante que todas as frases têm igual oportunidade de serem selecionadas, cumprindo com os requisitos de aparição definidos.
+- **Redução de Viés:** A aleatoriedade no sorteio proporciona um campo de avaliação mais justo e, ao mesmo tempo, aprofunda a análise comportamental dos entrevistados.
+- **Facilidade de Implementação:** Automatizar o sorteio e a exportação dos dados em arquivos organizados simplifica o processo de coleta e análise de dados, permitindo um foco maior na interpretação dos resultados.
