@@ -99,3 +99,45 @@ Uma vez que as frases são sorteadas para cada conjunto e entrevistado, estas in
 - **Cobertura Completa:** O uso de sorteio aleatório garante que todas as frases têm igual oportunidade de serem selecionadas, cumprindo com os requisitos de aparição definidos.
 - **Redução de Viés:** A aleatoriedade no sorteio proporciona um campo de avaliação mais justo e, ao mesmo tempo, aprofunda a análise comportamental dos entrevistados.
 - **Facilidade de Implementação:** Automatizar o sorteio e a exportação dos dados em arquivos organizados simplifica o processo de coleta e análise de dados, permitindo um foco maior na interpretação dos resultados.
+
+**5. Sobre o Código**
+
+**Código em Python**
+
+**Bibliotecas Utilizadas:**
+
+- **NumPy e Pandas:** Usadas para manipulação de arrays e criação de DataFrames para organização e exportação de dados.
+- **OS:** Para possíveis operações no sistema de arquivos, embora no exemplo atual isso não seja explicitamente utilizado.
+
+**Principais Funções:**
+
+- **calcular_conjuntos_otimizados:** Determina o número mínimo de conjuntos necessário com base no número total de frases, número alvo de aparições e itens por conjunto.
+- **gerar_excel_para_entrevistados:** Cria conjuntos de frases para cada entrevistado, sorteando-as aleatoriamente, e exporta os resultados para um arquivo Excel.
+- **validar_entrada:** Verifica se as condições de entrada são válidas, assegurando que o sorteio de frases possa ser executado sem problemas.
+- **gerar_relatorio_validacao:** Gera um relatório em formato de texto com a validação das entradas.
+
+**Saída:**
+
+Um arquivo Excel com dados dos conjuntos MaxDiff e um resumo contendo estatísticas sobre os conjuntos e frases.
+
+**Código em R**
+
+**Bibliotecas Utilizadas:**
+
+- **openxlsx:** Usada para criar e manipular arquivos Excel, permitindo a exportação de dados de forma semelhante ao Python.
+
+**Principais Funções:**
+
+- **calcular_conjuntos_otimizados:** Similar à versão Python, calcula os conjuntos necessários.
+- **gerar_excel_para_entrevistados:** Semelhante ao Python, essa função sorteia frases e organiza seus dados para exportação em Excel.
+- **validar_entrada:** Verifica a adequação das entradas em termos das frases e requisitos de conjunto.
+- **gerar_relatorio_validacao:** Cria um relatório de texto resumindo a validação das condições de entrada.
+
+**Diferenças Notáveis:**
+
+- Enquanto Python usa a função np.random.choice para geração aleatória, o R utiliza sample para o mesmo propósito.
+- Em R, os dados são organizados em data frames e exportados usando as funcionalidades oferecidas pelo pacote openxlsx.
+
+**Por Que As Duas Implementações?**
+
+As duas implementações oferecem flexibilidade e permitem que os usuários escolham sua linguagem preferida com base nas necessidades da equipe ou do projeto. Tanto Python quanto R têm pontos fortes únicos em análise de dados, e este projeto equilibra essas vantagens.
