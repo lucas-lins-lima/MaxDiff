@@ -120,6 +120,30 @@ Uma vez que as frases são sorteadas para cada conjunto e entrevistado, estas in
 
 Um arquivo Excel com dados dos conjuntos MaxDiff e um resumo contendo estatísticas sobre os conjuntos e frases.
 
+**Bibliotecas Importadas**
+
+- **import numpy as np:** Importa a biblioteca NumPy, útil para operações rápidas e eficientes em arrays e matrizes.
+- **import pandas as pd:** Importa a biblioteca Pandas, que facilita a manipulação e análise de dados tabulares através de DataFrames.
+- **import math:** Traz funções matemáticas adicionais, como arredondamento, exponenciais, logaritmos, etc.
+- **import os:** Usado para interações com o sistema operacional, como manipulação de arquivos e diretórios.
+
+**Funções Específicas**
+
+- **math.ceil(x):** Retorna o menor inteiro maior ou igual a x, usado para garantir que o número mínimo de conjuntos seja um valor inteiro.
+- **np.random.choice(arr, size, replace):** Seleciona aleatoriamente elementos de um array.
+- **arr:** Array de onde escolher os elementos.
+- **size:** Número de elementos a escolher.
+- **replace=False:** Garante que elementos não serão repetidos na seleção.
+
+**Manipulação de Dados com Pandas**
+
+- **pd.DataFrame(dict):** Cria um DataFrame a partir de um dicionário, onde as chaves representam colunas e os valores representam dados das colunas.
+- **df.to_excel(writer, index=False, sheet_name='Name'):** Exporta um DataFrame para um arquivo Excel, permitindo especificar o nome da aba.
+
+**Outros Comandos**
+
+- with open(nome_arquivo, 'w') as arquivo: Abre um arquivo para escrita, garantindo que ele seja fechado corretamente após as operações de I/O.
+
 **Código em R**
 
 **Bibliotecas Utilizadas:**
@@ -132,6 +156,35 @@ Um arquivo Excel com dados dos conjuntos MaxDiff e um resumo contendo estatísti
 - **gerar_excel_para_entrevistados:** Semelhante ao Python, essa função sorteia frases e organiza seus dados para exportação em Excel.
 - **validar_entrada:** Verifica a adequação das entradas em termos das frases e requisitos de conjunto.
 - **gerar_relatorio_validacao:** Cria um relatório de texto resumindo a validação das condições de entrada.
+
+**Bibliotecas Importadas**
+
+- **library(openxlsx):** Carrega o pacote openxlsx, essencial para manipulação de planilhas Excel.
+
+**Funções Específicas**
+
+- **ceiling(x):** Igual à função Python math.ceil, retorna o menor inteiro maior ou igual a x.
+- **sample(arr, size, replace=FALSE):** Similar à np.random.choice, selecione elementos de forma aleatória de um vetor:
+- **arr:** Vetor de onde os elementos serão escolhidos.
+- **size:** Número de elementos a selecionar.
+- **replace=FALSE:** Não permite duplicação de elementos no mesmo sorteio.
+
+**Manipulação de Dados**
+
+- **data.frame(...):** Cria um DataFrame para organizar dados tabulares, semelhante ao DataFrame em Pandas.
+- **rbind(df1, df2):** Combina DataFrames ao longo das linhas, incrementando dados ao existente.
+
+**Escrita em Arquivos**
+
+- **writeLines(...):** Escreve texto em um arquivo de saída, utilizada para salvar relatórios de validação.
+- **cat(...):** Exibe mensagens no console ou as escreve em um arquivo, semelhante ao print em Python.
+
+**Funções Excel do openxlsx**
+
+- **createWorkbook():** Cria um novo workbook Excel.
+- **addWorksheet(wb, "Name"):** Adiciona uma nova aba ao workbook.
+- **writeData(wb, "SheetName", data):** Escreve data em uma planilha especificada do workbook.
+- **saveWorkbook(wb, file, overwrite=TRUE):** Salva o workbook especificado, podendo sobrescrever arquivos existentes.
 
 **Diferenças Notáveis:**
 
